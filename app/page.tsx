@@ -28,15 +28,15 @@ export default function HomePage() {
               <Link href="/projects" className="text-muted-foreground hover:text-foreground transition-colors">
                 Projects
               </Link>
-              <a href="#regions" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="/regions" className="text-muted-foreground hover:text-foreground transition-colors">
                 Regions
-              </a>
-              <a href="#team" className="text-muted-foreground hover:text-foreground transition-colors">
+              </Link>
+              <Link href="/team" className="text-muted-foreground hover:text-foreground transition-colors">
                 Our Team
-              </a>
-              <a href="#competitions" className="text-muted-foreground hover:text-foreground transition-colors">
+              </Link>
+              <Link href="/competitions" className="text-muted-foreground hover:text-foreground transition-colors">
                 Competitions
-              </a>
+              </Link>
             </div>
             <div className="w-20"></div>
           </div>
