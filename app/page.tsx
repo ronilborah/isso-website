@@ -22,9 +22,9 @@ export default function HomePage() {
               <a href="#home" className="text-muted-foreground hover:text-foreground transition-colors">
                 Home
               </a>
-              <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors">
                 About
-              </a>
+              </Link>
               <Link href="/projects" className="text-muted-foreground hover:text-foreground transition-colors">
                 Projects
               </Link>
