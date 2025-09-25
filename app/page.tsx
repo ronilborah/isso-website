@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Globe, Users, Award, BookOpen, ArrowRight, Mail, Phone, MapPin } from "lucide-react"
 import { ProjectCarousel } from "@/components/project-carousel"
+import Link from "next/link"
 
 export default function HomePage() {
   return (
@@ -24,9 +25,9 @@ export default function HomePage() {
               <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
                 About
               </a>
-              <a href="#projects" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="/projects" className="text-muted-foreground hover:text-foreground transition-colors">
                 Projects
-              </a>
+              </Link>
               <a href="#regions" className="text-muted-foreground hover:text-foreground transition-colors">
                 Regions
               </a>
