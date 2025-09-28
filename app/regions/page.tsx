@@ -148,15 +148,12 @@ export default function RegionsPage() {
                                             </div>
                                         </div>
                                         <div className="lg:w-2/3">
-                                            <div className="flex items-start gap-4 mb-4">
-                                                <div className="text-3xl">{region.icon}</div>
-                                                <div className="flex-1">
-                                                    <CardTitle className="text-2xl md:text-3xl mb-2">
-                                                        {region.name}
-                                                    </CardTitle>
-                                                </div>
+                                            <div className="mb-6">
+                                                <CardTitle className="text-2xl md:text-3xl mb-4">
+                                                    {region.name}
+                                                </CardTitle>
                                             </div>
-                                            <p className="text-muted-foreground text-base leading-relaxed mb-4">
+                                            <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
                                                 {region.description}
                                             </p>
                                         </div>
