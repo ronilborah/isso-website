@@ -11,7 +11,7 @@ export default function TeamPage() {
             role: "Founder & President",
             university: "Abdul Rahim Shaheed Boys High School",
             location: "Afghanistan",
-            image: "/components/team/qurban.avif",
+            image: "/team/qurban.jpg",
             bio: "As an accomplished English Instructor, Co-founder of Youth Voice Network, Doha Debates Ambassador and a National Debate Champion, I have had the privilege of speaking at the Global Education Network. My passion lies in addressing global issues and finding solutions through the International Students STEM Organization (ISSO).",
             linkedin: "#",
             email: "qurban@istudentsstemo.org"
@@ -21,7 +21,7 @@ export default function TeamPage() {
             role: "Founder & Head of International Outreach",
             university: "UWCSEA Dover",
             location: "Singapore",
-            image: "/components/team/justinpark.avif",
+            image: "/team/justinpark.jpg",
             bio: "With my experiences founding many international organizations and startups such as Kuratek, United World College Math Tournament, and UWCHacks, along with taking part in math competitions since 3rd grade, I'm eager to strengthen the connection between student STEM communities internationally and locally.",
             linkedin: "#",
             email: "justin@istudentsstemo.org"
@@ -41,9 +41,9 @@ export default function TeamPage() {
             role: "Founder & President",
             university: "UWCSEA Dover",
             location: "Singapore",
-            image: "/components/team/abigail.avif",
+            image: "/team/abigail.jpg",
             bio: "Through the leadership skills gained through many responsibilities such as Tigerwatch GC, Math Ambassadors, Korean Drumming, and my academic passion from many math competitions such as UKMT, BMO, AMC, AIME, I aspire to unite STEM students through this organization and share my passion globally.",
-            linkedin: "#",
+            linkedin: "https://www.linkedin.com/in/abigail-eom-8118372aa/",
             email: "abigail@istudentsstemo.org"
         }
     ]
@@ -54,9 +54,9 @@ export default function TeamPage() {
             role: "Faculty Advisor",
             university: "Korea Maritime & Ocean University",
             department: "Assistant Professor",
-            image: "/components/team/woochulchung.avif",
+            image: "/team/woochulchung.jpg",
             bio: "Assistant Professor providing academic guidance and mentorship to ISSO's international initiatives and STEM education programs.",
-            linkedin: "#",
+            linkedin: "https://www.linkedin.com/in/woo-chul-chung-808a245a/",
             email: "wchung@kmou.ac.kr"
         }
     ]
@@ -115,7 +115,7 @@ export default function TeamPage() {
             role: "Biology Lead",
             university: "International School",
             major: "Biology & Life Sciences",
-            image: "/components/team/jonathan.avif",
+            image: "/team/jonathan.jpg",
             expertise: "Molecular Biology, Genetics, Biotechnology",
             linkedin: "#"
         },
@@ -275,10 +275,14 @@ export default function TeamPage() {
                                                 <Mail className="w-3 h-3" />
                                                 Contact
                                             </Button>
-                                            <Button size="sm" variant="outline" className="flex items-center gap-2 w-full">
-                                                <Linkedin className="w-3 h-3" />
-                                                LinkedIn
-                                            </Button>
+                                            {founder.linkedin && founder.linkedin !== "#" && (
+                                                <Button size="sm" variant="outline" className="flex items-center gap-2 w-full" asChild>
+                                                    <a href={founder.linkedin} target="_blank" rel="noopener noreferrer">
+                                                        <Linkedin className="w-3 h-3" />
+                                                        LinkedIn
+                                                    </a>
+                                                </Button>
+                                            )}
                                         </div>
                                     </div>
                                 </CardContent>
@@ -331,10 +335,14 @@ export default function TeamPage() {
                                                     <Mail className="w-4 h-4" />
                                                     Contact
                                                 </Button>
-                                                <Button size="sm" variant="outline" className="flex items-center gap-2">
-                                                    <Linkedin className="w-4 h-4" />
-                                                    LinkedIn
-                                                </Button>
+                                                {advisor.linkedin && advisor.linkedin !== "#" && (
+                                                    <Button size="sm" variant="outline" className="flex items-center gap-2" asChild>
+                                                        <a href={advisor.linkedin} target="_blank" rel="noopener noreferrer">
+                                                            <Linkedin className="w-4 h-4" />
+                                                            LinkedIn
+                                                        </a>
+                                                    </Button>
+                                                )}
                                             </div>
                                         </div>
                                     </div>
@@ -382,9 +390,8 @@ export default function TeamPage() {
                                         <p className="text-muted-foreground text-xs leading-relaxed mb-4">
                                             {leader.bio}
                                         </p>
-                                        <Button size="sm" variant="outline" className="w-full flex items-center gap-2">
-                                            <Linkedin className="w-3 h-3" />
-                                            Connect
+                                        <Button size="sm" variant="outline" className="w-full">
+                                            Contact
                                         </Button>
                                     </div>
                                 </CardContent>
@@ -432,9 +439,8 @@ export default function TeamPage() {
                                             <p className="font-semibold text-primary mb-1">Expertise:</p>
                                             <p className="leading-relaxed">{leader.expertise}</p>
                                         </div>
-                                        <Button size="sm" variant="outline" className="w-full flex items-center gap-2">
-                                            <Linkedin className="w-3 h-3" />
-                                            Connect
+                                        <Button size="sm" variant="outline" className="w-full">
+                                            Contact
                                         </Button>
                                     </div>
                                 </CardContent>
