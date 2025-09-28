@@ -12,7 +12,7 @@ export default function RegionsPage() {
 
             color: "bg-blue-100 text-blue-800 border-blue-200",
             icon: "🌏",
-            mapImage: "/placeholder.svg"
+            mapImage: "/southeastasia.jpg"
         },
         {
             name: "Central Asia",
@@ -20,7 +20,7 @@ export default function RegionsPage() {
 
             color: "bg-green-100 text-green-800 border-green-200",
             icon: "�️",
-            mapImage: "/placeholder.jpg"
+            mapImage: "/centralasia.jpg"
         }
     ]
 
