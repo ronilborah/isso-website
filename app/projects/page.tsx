@@ -9,37 +9,44 @@ export default function ProjectsPage() {
         {
             title: "Teaching Girls In Afghanistan",
             longDescription: "Providing STEM education to the Afghanistan girls as they were banned from secondary education through online classes with supporting their internet costs through gofundme.",
-            image: "/placeholder-dxfef.png",
+            image: "/projects/Screenshot 2024-06-13 at 11_25_25 PM.png",
             category: "Education",
             status: "Active"
         },
         {
             title: "ISSO Scholarship",
             longDescription: "Plans on providing funding to various causes including:\n\n• Funding for materials/equipment/etc for students working on STEM projects with positive community/global impact\n\n• Talented, low-income students wanting to take part in overseas academic competition events\n\n• Resources for STEM education\n\nTo make sure that everyone has great opportunities and education in STEM.",
-            image: "/placeholder.jpg",
+            image: "/projects/Math Tutoring.png",
             category: "Funding",
             status: "Planning"
         },
         {
             title: "Virtual Global STEM Celebration",
             longDescription: "An international online event where students in STEM can celebrate different cultures, take part in fun debate in STEM topics, friendly academic competitions, among other fun events.",
-            image: "/placeholder.svg",
+            image: "/projects/Virtual Conference.jpg-2.png",
             category: "Events",
             status: "Upcoming"
         },
         {
             title: "Engaging STEM Education",
             longDescription: "Providing STEM education to the underprivileged, but in creative ways to provide quality and engaging education such as through fun skits and drama.",
-            image: "/diverse-group-of-international-students-working-to.jpg",
+            image: "/projects/Theater Performance.png",
             category: "Education",
             status: "Active"
         },
         {
             title: "Improving electricity and internet in Afghanistan",
             longDescription: "This is a technical/engineering project thinking of solutions to improve electricity and internet access in Afghanistan. Girls in Afghanistan rely on online education due to being banned from schools and universities. However, power cuts due to the suspension of connections with countries that provide Afghanistan with electricity have created difficulties accessing online education.",
-            image: "/professional-headshot-of-young-african-woman-in-en.jpg",
+            image: "projects/Sustainable Hydroelectric Power Generation .png",
             category: "Technology",
             status: "Research"
+        },
+        {
+            title: "Teaching Malaysian Students",
+            longDescription: "Providing STEM education to the underprivileged, but in creative ways to provide quality and engaging education such as through fun skits and drama.",
+            image: "projects/Image by Kenny Eliason.jpg-2.png",
+            category: "Events",
+            status: "Upcoming"
         }
     ]
 

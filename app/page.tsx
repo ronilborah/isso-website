@@ -56,12 +56,7 @@ export default function HomePage() {
               academic and professional excellence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-6">
-                Get Involved <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-transparent">
-                Learn More
-              </Button>
+
             </div>
           </div>
         </div>
@@ -71,7 +66,7 @@ export default function HomePage() {
       <section className="py-20 px-6 bg-secondary/10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-4xl mx-auto">
-            <Badge className="mb-6 bg-accent text-accent-foreground">About ISSO</Badge>
+
             <h2 className="text-4xl md:text-5xl font-bold mb-8 text-balance">Our Mission</h2>
             <blockquote className="text-2xl md:text-3xl font-medium text-primary mb-12 text-balance leading-relaxed">
               "To unite students in STEM internationally and locally to tackle issues around the world"
@@ -89,7 +84,7 @@ export default function HomePage() {
       <section id="projects" className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <Badge className="mb-6 bg-primary text-primary-foreground">Featured Projects</Badge>
+
             <h2 className="text-4xl md:text-5xl font-bold mb-8 text-balance">Innovation in Action</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
               ISSO works on a variety of technical, fundraising, educational, and event projects with participation from chapters and divisions all around the world. Additionally, each region, division, and chapter may independently work on their own projects for propose ideas for international projects.
@@ -103,33 +98,37 @@ export default function HomePage() {
               {
                 title: "Teaching Girls In Afghanistan",
                 longDescription: "Providing STEM education to the Afghanistan girls as they were banned from secondary education through online classes with supporting their internet costs through gofundme.",
-                image: "/placeholder-dxfef.png",
+                image: "/projects/Screenshot 2024-06-13 at 11_25_25 PM.png",
 
               },
               {
                 title: "ISSO Scholarship",
                 longDescription: "Plans on providing funding to various causes including:\n\n• Funding for materials/equipment/etc for students working on STEM projects with positive community/global impact\n\n• Talented, low-income students wanting to take part in overseas academic competition events\n\n• Resources for STEM education\n\nTo make sure that everyone has great opportunities and education in STEM.",
-                image: "/placeholder.jpg",
+                image: "/projects/Math Tutoring.png",
+
               },
               {
                 title: "Virtual Global STEM Celebration",
-
                 longDescription: "An international online event where students in STEM can celebrate different cultures, take part in fun debate in STEM topics, friendly academic competitions, among other fun events.",
-                image: "/placeholder.svg",
+                image: "/projects/Virtual Conference.jpg-2.png",
 
               },
               {
                 title: "Engaging STEM Education",
                 longDescription: "Providing STEM education to the underprivileged, but in creative ways to provide quality and engaging education such as through fun skits and drama.",
-
-                image: "/diverse-group-of-international-students-working-to.jpg",
+                image: "/projects/Theater Performance.png",
 
               },
               {
                 title: "Improving electricity and internet in Afghanistan",
-
                 longDescription: "This is a technical/engineering project thinking of solutions to improve electricity and internet access in Afghanistan. Girls in Afghanistan rely on online education due to being banned from schools and universities. However, power cuts due to the suspension of connections with countries that provide Afghanistan with electricity have created difficulties accessing online education.",
-                image: "/professional-headshot-of-young-african-woman-in-en.jpg",
+                image: "projects/Sustainable Hydroelectric Power Generation .png",
+
+              },
+              {
+                title: "Teaching Malaysian Students",
+                longDescription: "Providing STEM education to the underprivileged, but in creative ways to provide quality and engaging education such as through fun skits and drama.",
+                image: "projects/Image by Kenny Eliason.jpg-2.png",
 
               }
             ]}
@@ -146,7 +145,7 @@ export default function HomePage() {
       <section id="achievements" className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <Badge className="mb-6 bg-accent text-accent-foreground">Our Impact</Badge>
+
             <h2 className="text-4xl md:text-5xl font-bold mb-8 text-balance">Achievements that matter</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
               Measuring success through the accomplishments of our community and the lasting impact we create together.
