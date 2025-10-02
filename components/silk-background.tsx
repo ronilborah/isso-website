@@ -15,7 +15,7 @@ export default function SilkBackground() {
                 <Silk
                     speed={5}
                     scale={1}
-                    color="#7B7481"
+                    color="#1e3a8a"
                     noiseIntensity={1.5}
                     rotation={0}
                 />

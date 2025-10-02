@@ -6,9 +6,8 @@ import SilkBackground from '@/components/silk-background'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.app',
+  title: ' isso',
+  
 }
 
 export default function RootLayout({

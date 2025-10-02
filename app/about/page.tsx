@@ -8,7 +8,7 @@ export default function AboutPage() {
     return (
         <div className="min-h-screen text-foreground">
             {/* Navigation */}
-            <nav className="fixed top-0 w-full z-50 bg-background/60 backdrop-blur-md border-b border-border">
+            <nav className="fixed top-4 left-4 right-4 z-50 bg-background/60 backdrop-blur-md border border-border rounded-2xl">
                 <div className="max-w-7xl mx-auto px-6 py-4">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center gap-3">
