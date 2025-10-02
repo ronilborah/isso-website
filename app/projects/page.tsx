@@ -81,9 +81,9 @@ export default function ProjectsPage() {
     }
 
     return (
-        <div className="min-h-screen bg-background text-foreground">
+        <div className="min-h-screen text-foreground">
             {/* Navigation */}
-            <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
+            <nav className="fixed top-0 w-full z-50 bg-background/60 backdrop-blur-md border-b border-border">
                 <div className="max-w-7xl mx-auto px-6 py-4">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center gap-3">
@@ -93,19 +93,19 @@ export default function ProjectsPage() {
                             <span className="text-xl font-bold">ISSO</span>
                         </div>
                         <div className="hidden md:flex items-center justify-center gap-8 flex-1">
-                            <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                                 Home
                             </Link>
-                            <a href="/#about" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <a href="/#about" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                                 About
                             </a>
-                            <a href="/projects" className="text-foreground font-medium">
+                            <a href="/projects" className="text-foreground font-medium hover-underline-slide">
                                 Projects
                             </a>
-                            <Link href="/regions" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <Link href="/regions" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                                 Regions
                             </Link>
-                            <Link href="/team" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <Link href="/team" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                                 Our Team
                             </Link>
                             <Link href="/competitions" className="text-muted-foreground hover:text-foreground transition-colors">
@@ -132,7 +132,7 @@ export default function ProjectsPage() {
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center max-w-4xl mx-auto">
                         <Badge className="mb-6 bg-primary text-primary-foreground">Our Projects</Badge>
-                        <h1 className="text-4xl md:text-6xl font-bold mb-8 text-balance">
+                        <h1 className="text-4xl md:text-6xl font-bold mb-8 text-balance hover-lift">
                             Innovation in Action
                         </h1>
                         <p className="text-xl text-muted-foreground mb-12 text-pretty leading-relaxed">
@@ -174,7 +174,7 @@ export default function ProjectsPage() {
                                 {/* Project Content */}
                                 <div className="w-full lg:w-1/2 space-y-6">
                                     <div>
-                                        <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-balance leading-tight">
+                                        <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-balance leading-tight hover-letter-space">
                                             {project.title}
                                         </h2>
                                         <div className="text-muted-foreground text-lg leading-relaxed">

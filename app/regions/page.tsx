@@ -37,22 +37,22 @@ export default function RegionsPage() {
                             <span className="text-xl font-bold">ISSO</span>
                         </div>
                         <div className="hidden md:flex items-center justify-center gap-8 flex-1">
-                            <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                                 Home
                             </Link>
-                            <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                                 About
                             </Link>
-                            <Link href="/projects" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <Link href="/projects" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                                 Projects
                             </Link>
-                            <a href="/regions" className="text-foreground font-medium">
+                            <a href="/regions" className="text-foreground font-medium hover-underline-slide">
                                 Regions
                             </a>
-                            <Link href="/team" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <Link href="/team" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                                 Our Team
                             </Link>
-                            <Link href="/competitions" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <Link href="/competitions" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                                 Competitions
                             </Link>
                         </div>
@@ -76,7 +76,7 @@ export default function RegionsPage() {
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center max-w-4xl mx-auto">
                         <Badge className="mb-6 bg-primary text-primary-foreground">Global Network</Badge>
-                        <h1 className="text-4xl md:text-6xl font-bold mb-8 text-balance">
+                        <h1 className="text-4xl md:text-6xl font-bold mb-8 text-balance hover-lift">
                             Our Regions
                         </h1>
                         <p className="text-xl text-muted-foreground mb-12 text-pretty leading-relaxed">
@@ -95,7 +95,7 @@ export default function RegionsPage() {
                                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <MapPin className="w-6 h-6 text-primary" />
                                 </div>
-                                <h3 className="text-2xl font-bold text-primary mb-2">{regions.length}</h3>
+                                <h3 className="text-2xl font-bold text-primary mb-2 hover-bounce">{regions.length}</h3>
                                 <p className="text-muted-foreground">Global Regions</p>
                             </CardContent>
                         </Card>
@@ -104,7 +104,7 @@ export default function RegionsPage() {
                                 <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <Building2 className="w-6 h-6 text-accent-foreground" />
                                 </div>
-                                <h3 className="text-2xl font-bold text-primary mb-2">15+</h3>
+                                <h3 className="text-2xl font-bold text-primary mb-2 hover-bounce">15+</h3>
                                 <p className="text-muted-foreground">Countries Covered</p>
                             </CardContent>
                         </Card>
@@ -113,7 +113,7 @@ export default function RegionsPage() {
                                 <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <GraduationCap className="w-6 h-6 text-secondary-foreground" />
                                 </div>
-                                <h3 className="text-2xl font-bold text-primary mb-2">50+</h3>
+                                <h3 className="text-2xl font-bold text-primary mb-2 hover-bounce">50+</h3>
                                 <p className="text-muted-foreground">Universities</p>
                             </CardContent>
                         </Card>
@@ -122,7 +122,7 @@ export default function RegionsPage() {
                                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <Users className="w-6 h-6 text-green-700" />
                                 </div>
-                                <h3 className="text-2xl font-bold text-primary mb-2">500+</h3>
+                                <h3 className="text-2xl font-bold text-primary mb-2 hover-bounce">500+</h3>
                                 <p className="text-muted-foreground">Active Members</p>
                             </CardContent>
                         </Card>
@@ -140,8 +140,8 @@ export default function RegionsPage() {
                                     <div className="flex flex-col lg:flex-row gap-6">
                                         <div className="lg:w-1/3">
                                             <div className="aspect-square bg-secondary/10 rounded-lg overflow-hidden">
-                                                <img 
-                                                    src={region.mapImage} 
+                                                <img
+                                                    src={region.mapImage}
                                                     alt={`${region.name} map`}
                                                     className="w-full h-full object-cover"
                                                 />

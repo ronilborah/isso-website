@@ -24,13 +24,13 @@ export default function CompetitionsPage() {
                     image: "/placeholder.svg"
                 },
                 {
-                    place: "2nd place", 
+                    place: "2nd place",
                     name: "Fahima Jafari",
                     image: "/placeholder.svg"
                 },
                 {
                     place: "3rd place",
-                    name: "Shohra Azami", 
+                    name: "Shohra Azami",
                     image: "/placeholder.svg"
                 }
             ]
@@ -58,7 +58,7 @@ export default function CompetitionsPage() {
                     description: "Create a video on an important topic or discovery in Physics and your thoughts on how it has affected the present or how it may affect the future"
                 },
                 {
-                    title: "Prompt 2", 
+                    title: "Prompt 2",
                     description: "Create a video on a topic or phenomena in Biology that you think has had the greatest impact in the past decade, justifying your claim"
                 },
                 {
@@ -75,7 +75,7 @@ export default function CompetitionsPage() {
                 },
                 {
                     place: "2nd place",
-                    name: "Iravati Joshi", 
+                    name: "Iravati Joshi",
                     image: "/placeholder.svg",
                     video: "Space and marine life themed"
                 },
@@ -115,22 +115,22 @@ export default function CompetitionsPage() {
                             <span className="text-xl font-bold">ISSO</span>
                         </div>
                         <div className="hidden md:flex items-center justify-center gap-8 flex-1">
-                            <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                                 Home
                             </Link>
-                            <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                                 About
                             </Link>
-                            <Link href="/projects" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <Link href="/projects" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                                 Projects
                             </Link>
-                            <Link href="/regions" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <Link href="/regions" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                                 Regions
                             </Link>
-                            <Link href="/team" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <Link href="/team" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                                 Our Team
                             </Link>
-                            <a href="/competitions" className="text-foreground font-medium">
+                            <a href="/competitions" className="text-foreground font-medium hover-underline-slide">
                                 Competitions
                             </a>
                         </div>
@@ -154,7 +154,7 @@ export default function CompetitionsPage() {
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center max-w-4xl mx-auto">
                         <Badge className="mb-6 bg-primary text-primary-foreground">Competitions</Badge>
-                        <h1 className="text-4xl md:text-6xl font-bold mb-8 text-balance">
+                        <h1 className="text-4xl md:text-6xl font-bold mb-8 text-balance hover-lift">
                             ISSO Competitions
                         </h1>
                         <p className="text-xl text-muted-foreground mb-12 text-pretty leading-relaxed">
@@ -326,22 +326,19 @@ export default function CompetitionsPage() {
                                                                         className="w-20 h-20 rounded-full object-cover mx-auto border-3 border-primary/20"
                                                                     />
                                                                     <div className="absolute -bottom-1 -right-1">
-                                                                        <div className={`w-8 h-8 rounded-full flex items-center justify-center border-2 border-background ${
-                                                                            winnerIndex === 0 ? 'bg-yellow-100' : 
-                                                                            winnerIndex === 1 ? 'bg-gray-100' : 'bg-orange-100'
-                                                                        }`}>
-                                                                            <Award className={`w-4 h-4 ${
-                                                                                winnerIndex === 0 ? 'text-yellow-600' : 
-                                                                                winnerIndex === 1 ? 'text-gray-600' : 'text-orange-600'
-                                                                            }`} />
+                                                                        <div className={`w-8 h-8 rounded-full flex items-center justify-center border-2 border-background ${winnerIndex === 0 ? 'bg-yellow-100' :
+                                                                                winnerIndex === 1 ? 'bg-gray-100' : 'bg-orange-100'
+                                                                            }`}>
+                                                                            <Award className={`w-4 h-4 ${winnerIndex === 0 ? 'text-yellow-600' :
+                                                                                    winnerIndex === 1 ? 'text-gray-600' : 'text-orange-600'
+                                                                                }`} />
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <Badge className={`border mb-3 text-xs ${
-                                                                    winnerIndex === 0 ? 'bg-yellow-100 text-yellow-800 border-yellow-200' : 
-                                                                    winnerIndex === 1 ? 'bg-gray-100 text-gray-800 border-gray-200' : 
-                                                                    'bg-orange-100 text-orange-800 border-orange-200'
-                                                                }`}>
+                                                                <Badge className={`border mb-3 text-xs ${winnerIndex === 0 ? 'bg-yellow-100 text-yellow-800 border-yellow-200' :
+                                                                        winnerIndex === 1 ? 'bg-gray-100 text-gray-800 border-gray-200' :
+                                                                            'bg-orange-100 text-orange-800 border-orange-200'
+                                                                    }`}>
                                                                     {winner.place}
                                                                 </Badge>
                                                                 <h3 className="text-lg font-bold mb-2">{winner.name}</h3>

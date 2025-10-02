@@ -7,9 +7,9 @@ import Link from "next/link"
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen text-foreground">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
+      <nav className="fixed top-0 w-full z-50 bg-background/60 backdrop-blur-md border-b border-border">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
@@ -19,22 +19,22 @@ export default function HomePage() {
               <span className="text-xl font-bold">ISSO</span>
             </div>
             <div className="hidden md:flex items-center justify-center gap-8 flex-1">
-              <a href="#home" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="#home" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                 Home
               </a>
-              <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                 About
               </Link>
-              <Link href="/projects" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="/projects" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                 Projects
               </Link>
-              <Link href="/regions" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="/regions" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                 Regions
               </Link>
-              <Link href="/team" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="/team" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                 Our Team
               </Link>
-              <Link href="/competitions" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="/competitions" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                 Competitions
               </Link>
             </div>
@@ -47,9 +47,9 @@ export default function HomePage() {
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-7xl font-bold mb-8 text-balance">
+            <h1 className="text-5xl md:text-7xl font-bold mb-8 text-balance hover-lift">
               International Students
-              <span className="block text-primary">STEM Organization</span>
+              <span className="block text-primary hover-glow">STEM Organization</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-12 text-pretty leading-relaxed">
               Empowering international students in STEM fields through community, mentorship, and opportunities for
@@ -67,8 +67,8 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-4xl mx-auto">
 
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-balance">Our Mission</h2>
-            <blockquote className="text-2xl md:text-3xl font-medium text-primary mb-12 text-balance leading-relaxed">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-balance hover-scale">Our Mission</h2>
+            <blockquote className="text-2xl md:text-3xl font-medium text-primary mb-12 text-balance leading-relaxed hover-gradient">
               "To unite students in STEM internationally and locally to tackle issues around the world"
             </blockquote>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
@@ -85,7 +85,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
 
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-balance">Innovation in Action</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-balance hover-scale">Innovation in Action</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
               ISSO works on a variety of technical, fundraising, educational, and event projects with participation from chapters and divisions all around the world. Additionally, each region, division, and chapter may independently work on their own projects for propose ideas for international projects.
 
@@ -146,7 +146,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
 
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-balance">Achievements that matter</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-balance hover-scale">Achievements that matter</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
               Measuring success through the accomplishments of our community and the lasting impact we create together.
             </p>
@@ -158,7 +158,7 @@ export default function HomePage() {
               <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-primary-foreground" />
               </div>
-              <h3 className="text-3xl font-bold mb-2">2,500+</h3>
+              <h3 className="text-3xl font-bold mb-2 hover-bounce">2,500+</h3>
               <p className="text-muted-foreground">Students Supported</p>
             </Card>
 
@@ -166,7 +166,7 @@ export default function HomePage() {
               <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="w-8 h-8 text-accent-foreground" />
               </div>
-              <h3 className="text-3xl font-bold mb-2">150+</h3>
+              <h3 className="text-3xl font-bold mb-2 hover-bounce">150+</h3>
               <p className="text-muted-foreground">Research Publications</p>
             </Card>
 
@@ -174,7 +174,7 @@ export default function HomePage() {
               <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <BookOpen className="w-8 h-8 text-primary-foreground" />
               </div>
-              <h3 className="text-3xl font-bold mb-2">95%</h3>
+              <h3 className="text-3xl font-bold mb-2 hover-bounce">95%</h3>
               <p className="text-muted-foreground">Job Placement Rate</p>
             </Card>
 
@@ -182,7 +182,7 @@ export default function HomePage() {
               <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
                 <Globe className="w-8 h-8 text-accent-foreground" />
               </div>
-              <h3 className="text-3xl font-bold mb-2">75+</h3>
+              <h3 className="text-3xl font-bold mb-2 hover-bounce">75+</h3>
               <p className="text-muted-foreground">Countries Represented</p>
             </Card>
           </div>
@@ -190,14 +190,14 @@ export default function HomePage() {
           {/* Achievement Highlights */}
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
-              <h3 className="text-2xl font-bold mb-6">Recent Milestones</h3>
+              <h3 className="text-2xl font-bold mb-6 hover-letter-space">Recent Milestones</h3>
               <div className="space-y-6">
                 <div className="flex gap-4">
                   <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
                     <Award className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2">National Science Foundation Grant</h4>
+                    <h4 className="font-semibold mb-2 hover-color-shift">National Science Foundation Grant</h4>
                     <p className="text-muted-foreground">
                       Awarded $2.5M to expand our mentorship programs and research initiatives across 20 universities.
                     </p>
@@ -208,7 +208,7 @@ export default function HomePage() {
                     <Users className="w-6 h-6 text-accent-foreground" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2">Global Partnership Network</h4>
+                    <h4 className="font-semibold mb-2 hover-color-shift">Global Partnership Network</h4>
                     <p className="text-muted-foreground">
                       Established partnerships with 50+ universities and 200+ industry leaders worldwide.
                     </p>
@@ -219,7 +219,7 @@ export default function HomePage() {
                     <BookOpen className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2">Innovation Challenge Winner</h4>
+                    <h4 className="font-semibold mb-2 hover-color-shift">Innovation Challenge Winner</h4>
                     <p className="text-muted-foreground">
                       Our student teams won 15 national competitions in engineering, AI, and biotechnology.
                     </p>

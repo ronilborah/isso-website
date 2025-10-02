@@ -6,9 +6,9 @@ import Image from "next/image"
 
 export default function AboutPage() {
     return (
-        <div className="min-h-screen bg-background text-foreground">
+        <div className="min-h-screen text-foreground">
             {/* Navigation */}
-            <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
+            <nav className="fixed top-0 w-full z-50 bg-background/60 backdrop-blur-md border-b border-border">
                 <div className="max-w-7xl mx-auto px-6 py-4">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center gap-3">
@@ -18,22 +18,22 @@ export default function AboutPage() {
                             <span className="text-xl font-bold">ISSO</span>
                         </div>
                         <div className="hidden md:flex items-center justify-center gap-8 flex-1">
-                            <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                                 Home
                             </Link>
-                            <Link href="/about" className="text-foreground font-medium">
+                            <Link href="/about" className="text-foreground font-medium hover-underline-slide">
                                 About
                             </Link>
-                            <Link href="/projects" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <Link href="/projects" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                                 Projects
                             </Link>
-                            <a href="/#regions" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <a href="/#regions" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                                 Regions
                             </a>
-                            <Link href="/team" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <Link href="/team" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                                 Our Team
                             </Link>
-                            <Link href="/competitions" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <Link href="/competitions" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                                 Competitions
                             </Link>
                         </div>
@@ -47,7 +47,7 @@ export default function AboutPage() {
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center max-w-4xl mx-auto">
 
-                        <h1 className="text-5xl md:text-7xl font-bold mb-8 text-balance">
+                        <h1 className="text-5xl md:text-7xl font-bold mb-8 text-balance hover-lift">
                             About ISSO
                         </h1>
                     </div>
@@ -58,8 +58,8 @@ export default function AboutPage() {
             <section className="py-20 px-6 bg-muted/20">
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center max-w-4xl mx-auto">
-                        <h2 className="text-4xl font-bold mb-8">Mission</h2>
-                        <p className="text-2xl text-muted-foreground mb-12 italic">
+                        <h2 className="text-4xl font-bold mb-8 hover-scale">Mission</h2>
+                        <p className="text-2xl text-muted-foreground mb-12 italic hover-gradient">
                             "To unite students in STEM internationally and locally to tackle issues around the world"
                         </p>
                         <p className="text-lg text-muted-foreground">
@@ -75,7 +75,7 @@ export default function AboutPage() {
             <section className="py-20 px-6">
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-4xl font-bold mb-6">Structure</h2>
+                        <h2 className="text-4xl font-bold mb-6 hover-scale">Structure</h2>
                         <p className="text-xl text-muted-foreground">Our organization</p>
                     </div>
 
@@ -98,7 +98,7 @@ export default function AboutPage() {
                                     <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                                         <Globe className="w-6 h-6 text-primary" />
                                     </div>
-                                    <h3 className="text-3xl font-bold">International</h3>
+                                    <h3 className="text-3xl font-bold hover-letter-space">International</h3>
                                 </div>
                                 <p className="text-muted-foreground text-lg">
                                     Our organization is an international organization with members all around the world. On an
@@ -128,7 +128,7 @@ export default function AboutPage() {
                                     <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                                         <MapPin className="w-6 h-6 text-primary" />
                                     </div>
-                                    <h3 className="text-3xl font-bold">Region</h3>
+                                    <h3 className="text-3xl font-bold hover-letter-space">Region</h3>
                                 </div>
                                 <p className="text-muted-foreground text-lg">
                                     A region is an area consisting of divisions in a geographical area such as South East Asia.
@@ -158,7 +158,7 @@ export default function AboutPage() {
                                     <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                                         <Building2 className="w-6 h-6 text-primary" />
                                     </div>
-                                    <h3 className="text-3xl font-bold">Division</h3>
+                                    <h3 className="text-3xl font-bold hover-letter-space">Division</h3>
                                 </div>
                                 <p className="text-muted-foreground text-lg">
                                     It is an area consisting of a collection of nearby chapters. It may consist of a single city or a
@@ -188,7 +188,7 @@ export default function AboutPage() {
                                     <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                                         <GraduationCap className="w-6 h-6 text-primary" />
                                     </div>
-                                    <h3 className="text-3xl font-bold">Chapter</h3>
+                                    <h3 className="text-3xl font-bold hover-letter-space">Chapter</h3>
                                 </div>
                                 <p className="text-muted-foreground text-lg">
                                     The smallest unit that our organization consist of is a chapter. It consists of a single school. It

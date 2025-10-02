@@ -184,22 +184,22 @@ export default function TeamPage() {
                             <span className="text-xl font-bold">ISSO</span>
                         </div>
                         <div className="hidden md:flex items-center justify-center gap-8 flex-1">
-                            <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                                 Home
                             </Link>
-                            <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                                 About
                             </Link>
-                            <Link href="/projects" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <Link href="/projects" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                                 Projects
                             </Link>
-                            <Link href="/regions" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <Link href="/regions" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                                 Regions
                             </Link>
-                            <a href="/team" className="text-foreground font-medium">
+                            <a href="/team" className="text-foreground font-medium hover-underline-slide">
                                 Our Team
                             </a>
-                            <Link href="/competitions" className="text-muted-foreground hover:text-foreground transition-colors">
+                            <Link href="/competitions" className="text-muted-foreground hover:text-foreground transition-colors hover-underline-slide">
                                 Competitions
                             </Link>
                         </div>
@@ -223,7 +223,7 @@ export default function TeamPage() {
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center max-w-4xl mx-auto">
                         <Badge className="mb-6 bg-primary text-primary-foreground">Our Team</Badge>
-                        <h1 className="text-4xl md:text-6xl font-bold mb-8 text-balance">
+                        <h1 className="text-4xl md:text-6xl font-bold mb-8 text-balance hover-lift">
                             Meet The Team
                         </h1>
                         <p className="text-xl text-muted-foreground mb-12 text-pretty leading-relaxed">
@@ -237,7 +237,7 @@ export default function TeamPage() {
             <section className="py-16 px-6">
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4">Founders</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold mb-4 hover-scale">Founders</h2>
                         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                             The visionaries who started ISSO with a dream to unite international STEM students globally.
                         </p>
@@ -259,7 +259,7 @@ export default function TeamPage() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <h3 className="text-lg font-bold mb-2">{founder.name}</h3>
+                                        <h3 className="text-lg font-bold mb-2 hover-color-shift">{founder.name}</h3>
                                         <Badge className={`border mb-3 ${getRoleBadgeColor(founder.role)}`}>
                                             {founder.role}
                                         </Badge>
@@ -296,7 +296,7 @@ export default function TeamPage() {
             <section className="py-16 px-6 bg-secondary/5">
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4">Advisor</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold mb-4 hover-scale">Advisor</h2>
                         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                             Experienced faculty member providing guidance and mentorship to our organization.
                         </p>
@@ -319,7 +319,7 @@ export default function TeamPage() {
                                             </div>
                                         </div>
                                         <div className="flex-1 text-center md:text-left">
-                                            <h3 className="text-2xl font-bold mb-2">{advisor.name}</h3>
+                                            <h3 className="text-2xl font-bold mb-2 hover-color-shift">{advisor.name}</h3>
                                             <Badge className={`border mb-3 ${getRoleBadgeColor(advisor.role)}`}>
                                                 {advisor.role}
                                             </Badge>
@@ -357,7 +357,7 @@ export default function TeamPage() {
             <section className="py-16 px-6">
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4">Leaders</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold mb-4 hover-scale">Leaders</h2>
                         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                             Executive team members driving strategic initiatives and managing regional operations.
                         </p>
@@ -379,7 +379,7 @@ export default function TeamPage() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <h3 className="text-lg font-bold mb-2">{leader.name}</h3>
+                                        <h3 className="text-lg font-bold mb-2 hover-color-shift">{leader.name}</h3>
                                         <Badge className={`border mb-3 text-xs ${getRoleBadgeColor(leader.role)}`}>
                                             {leader.role}
                                         </Badge>
@@ -405,7 +405,7 @@ export default function TeamPage() {
             <section className="py-16 px-6 bg-secondary/5">
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4">Subject Leaders</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold mb-4 hover-scale">Subject Leaders</h2>
                         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                             Domain experts leading specialized STEM initiatives and research projects across various fields.
                         </p>
@@ -427,7 +427,7 @@ export default function TeamPage() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <h3 className="text-lg font-bold mb-2">{leader.name}</h3>
+                                        <h3 className="text-lg font-bold mb-2 hover-color-shift">{leader.name}</h3>
                                         <Badge className={`border mb-3 text-xs ${getRoleBadgeColor(leader.role)}`}>
                                             {leader.role}
                                         </Badge>
