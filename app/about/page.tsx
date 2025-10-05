@@ -85,7 +85,7 @@ export default function AboutPage() {
                             <div className="order-2 lg:order-1">
                                 <div className="aspect-video bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl p-8 flex items-center justify-center">
                                     <Image
-                                        src="/placeholder.jpg"
+                                        src="about/11062b_0ad43a9b20c44f3e9eb3174f6d8ff0bb~mv2.png"
                                         alt="Global network visualization"
                                         width={500}
                                         height={300}
@@ -115,7 +115,7 @@ export default function AboutPage() {
                             <div>
                                 <div className="aspect-video bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl p-8 flex items-center justify-center">
                                     <Image
-                                        src="/placeholder.jpg"
+                                        src="about/f74d06_69129c5aea7f47a38dfdcc45496ef490~mv2.png"
                                         alt="Regional map showing Southeast Asia"
                                         width={500}
                                         height={300}
@@ -145,7 +145,7 @@ export default function AboutPage() {
                             <div className="order-2 lg:order-1">
                                 <div className="aspect-video bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl p-8 flex items-center justify-center">
                                     <Image
-                                        src="/placeholder.jpg"
+                                        src="about/f74d06_1a05c5f21a2a499192a7edc40861692b~mv2.png"
                                         alt="City/local area visualization"
                                         width={500}
                                         height={300}
@@ -175,7 +175,7 @@ export default function AboutPage() {
                             <div>
                                 <div className="aspect-video bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl p-8 flex items-center justify-center">
                                     <Image
-                                        src="/placeholder.jpg"
+                                        src="about/f74d06_69129c5aea7f47a38dfdcc45496ef490~mv2.png"
                                         alt="School/university building"
                                         width={500}
                                         height={300}
